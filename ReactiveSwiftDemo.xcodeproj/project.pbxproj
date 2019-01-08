@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		607363CCD423D28E2B6F8AD7 /* Pods_ReactiveSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED3742A2C37B38284FCD074 /* Pods_ReactiveSwiftDemo.framework */; };
 		E0DDAF3421E4BC6700BFEDEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DDAF3321E4BC6700BFEDEF /* AppDelegate.swift */; };
 		E0DDAF3621E4BC6700BFEDEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DDAF3521E4BC6700BFEDEF /* ViewController.swift */; };
 		E0DDAF3921E4BC6700BFEDEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DDAF3721E4BC6700BFEDEF /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6ED3742A2C37B38284FCD074 /* Pods_ReactiveSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C946CA318A02C5AAFD9D6CE /* Pods-ReactiveSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveSwiftDemo/Pods-ReactiveSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9176B2AF372430DE60502EFE /* Pods-ReactiveSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveSwiftDemo/Pods-ReactiveSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E0DDAF3021E4BC6700BFEDEF /* ReactiveSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DDAF3321E4BC6700BFEDEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0DDAF3521E4BC6700BFEDEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				607363CCD423D28E2B6F8AD7 /* Pods_ReactiveSwiftDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06213D30BA535A09C555ED99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6ED3742A2C37B38284FCD074 /* Pods_ReactiveSwiftDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DD8162771F27B4C8FBADE6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C946CA318A02C5AAFD9D6CE /* Pods-ReactiveSwiftDemo.debug.xcconfig */,
+				9176B2AF372430DE60502EFE /* Pods-ReactiveSwiftDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E0DDAF2721E4BC6700BFEDEF = {
 			isa = PBXGroup;
 			children = (
 				E0DDAF3221E4BC6700BFEDEF /* ReactiveSwiftDemo */,
 				E0DDAF3121E4BC6700BFEDEF /* Products */,
+				3DD8162771F27B4C8FBADE6F /* Pods */,
+				06213D30BA535A09C555ED99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0DDAF4221E4BC6B00BFEDEF /* Build configuration list for PBXNativeTarget "ReactiveSwiftDemo" */;
 			buildPhases = (
+				C9675EE025738E55C4C13104 /* [CP] Check Pods Manifest.lock */,
 				E0DDAF2C21E4BC6700BFEDEF /* Sources */,
 				E0DDAF2D21E4BC6700BFEDEF /* Frameworks */,
 				E0DDAF2E21E4BC6700BFEDEF /* Resources */,
+				304764A6D08AAC38873D2EEB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304764A6D08AAC38873D2EEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveSwiftDemo/Pods-ReactiveSwiftDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveSwiftDemo/Pods-ReactiveSwiftDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9675EE025738E55C4C13104 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactiveSwiftDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0DDAF2C21E4BC6700BFEDEF /* Sources */ = {
@@ -280,6 +355,7 @@
 		};
 		E0DDAF4321E4BC6B00BFEDEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C946CA318A02C5AAFD9D6CE /* Pods-ReactiveSwiftDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +374,7 @@
 		};
 		E0DDAF4421E4BC6B00BFEDEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9176B2AF372430DE60502EFE /* Pods-ReactiveSwiftDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
