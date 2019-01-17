@@ -24,12 +24,6 @@ class DataModel {
     }
 }
 
-extension UITableViewCell {
-    static var identifier: String {
-        return String(describing: self)
-    }
-}
-
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -40,7 +34,6 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         view.addSubview(tableView)
     }
-
 
     private lazy var dataSource: [DataModel] = {
         var array = [DataModel]()
@@ -79,5 +72,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.render(model)
 
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = LayoutTestViewController()
+        self.present(vc, animated: true, completion: nil)
     }
 }

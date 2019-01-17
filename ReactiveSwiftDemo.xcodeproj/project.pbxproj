@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		607363CCD423D28E2B6F8AD7 /* Pods_ReactiveSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED3742A2C37B38284FCD074 /* Pods_ReactiveSwiftDemo.framework */; };
+		E0970BA821EF2E640092867A /* LayoutTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0970BA721EF2E640092867A /* LayoutTestViewController.swift */; };
+		E0970BAE21EF2EEA0092867A /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0970BAC21EF2EEA0092867A /* TestCell.swift */; };
+		E0970BAF21EF2EEA0092867A /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0970BAD21EF2EEA0092867A /* TestCell.xib */; };
+		E0970BB121EF2F410092867A /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0970BB021EF2F410092867A /* ArrayExtension.swift */; };
+		E0970BB321EF2F5F0092867A /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0970BB221EF2F5F0092867A /* UIKitExtension.swift */; };
+		E0970BB521EF2FDA0092867A /* LayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0970BB421EF2FDA0092867A /* LayoutViewModel.swift */; };
+		E0970BBD21EF31A20092867A /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = E0970BB721EF31A10092867A /* 3.png */; };
+		E0970BBF21EF31A20092867A /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E0970BB921EF31A10092867A /* 1.png */; };
+		E0970BC021EF31A20092867A /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E0970BBA21EF31A20092867A /* 2.png */; };
 		E0DDAF3421E4BC6700BFEDEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DDAF3321E4BC6700BFEDEF /* AppDelegate.swift */; };
 		E0DDAF3621E4BC6700BFEDEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DDAF3521E4BC6700BFEDEF /* ViewController.swift */; };
 		E0DDAF3921E4BC6700BFEDEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DDAF3721E4BC6700BFEDEF /* Main.storyboard */; };
@@ -21,6 +30,15 @@
 		6ED3742A2C37B38284FCD074 /* Pods_ReactiveSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C946CA318A02C5AAFD9D6CE /* Pods-ReactiveSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveSwiftDemo/Pods-ReactiveSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9176B2AF372430DE60502EFE /* Pods-ReactiveSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveSwiftDemo/Pods-ReactiveSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E0970BA721EF2E640092867A /* LayoutTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutTestViewController.swift; sourceTree = "<group>"; };
+		E0970BAC21EF2EEA0092867A /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		E0970BAD21EF2EEA0092867A /* TestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
+		E0970BB021EF2F410092867A /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		E0970BB221EF2F5F0092867A /* UIKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
+		E0970BB421EF2FDA0092867A /* LayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViewModel.swift; sourceTree = "<group>"; };
+		E0970BB721EF31A10092867A /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		E0970BB921EF31A10092867A /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		E0970BBA21EF31A20092867A /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		E0DDAF3021E4BC6700BFEDEF /* ReactiveSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DDAF3321E4BC6700BFEDEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0DDAF3521E4BC6700BFEDEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +79,44 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E0970BA921EF2E750092867A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E0DDAF4721E4C14F00BFEDEF /* CommonCell.swift */,
+				E0DDAF4821E4C14F00BFEDEF /* CommonCell.xib */,
+				E0970BAC21EF2EEA0092867A /* TestCell.swift */,
+				E0970BAD21EF2EEA0092867A /* TestCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E0970BAA21EF2E810092867A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E0970BB421EF2FDA0092867A /* LayoutViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E0970BAB21EF2E940092867A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E0970BB021EF2F410092867A /* ArrayExtension.swift */,
+				E0970BB221EF2F5F0092867A /* UIKitExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E0970BB621EF317D0092867A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E0970BB921EF31A10092867A /* 1.png */,
+				E0970BBA21EF31A20092867A /* 2.png */,
+				E0970BB721EF31A10092867A /* 3.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E0DDAF2721E4BC6700BFEDEF = {
 			isa = PBXGroup;
 			children = (
@@ -84,12 +140,15 @@
 			children = (
 				E0DDAF3321E4BC6700BFEDEF /* AppDelegate.swift */,
 				E0DDAF3521E4BC6700BFEDEF /* ViewController.swift */,
-				E0DDAF4721E4C14F00BFEDEF /* CommonCell.swift */,
-				E0DDAF4821E4C14F00BFEDEF /* CommonCell.xib */,
+				E0970BA721EF2E640092867A /* LayoutTestViewController.swift */,
 				E0DDAF3721E4BC6700BFEDEF /* Main.storyboard */,
 				E0DDAF3A21E4BC6B00BFEDEF /* Assets.xcassets */,
 				E0DDAF3C21E4BC6B00BFEDEF /* LaunchScreen.storyboard */,
 				E0DDAF3F21E4BC6B00BFEDEF /* Info.plist */,
+				E0970BAA21EF2E810092867A /* ViewModels */,
+				E0970BA921EF2E750092867A /* Cells */,
+				E0970BAB21EF2E940092867A /* Extensions */,
+				E0970BB621EF317D0092867A /* Resources */,
 			);
 			path = ReactiveSwiftDemo;
 			sourceTree = "<group>";
@@ -154,9 +213,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0970BC021EF31A20092867A /* 2.png in Resources */,
+				E0970BBD21EF31A20092867A /* 3.png in Resources */,
 				E0DDAF4A21E4C14F00BFEDEF /* CommonCell.xib in Resources */,
+				E0970BBF21EF31A20092867A /* 1.png in Resources */,
 				E0DDAF3E21E4BC6B00BFEDEF /* LaunchScreen.storyboard in Resources */,
 				E0DDAF3B21E4BC6B00BFEDEF /* Assets.xcassets in Resources */,
+				E0970BAF21EF2EEA0092867A /* TestCell.xib in Resources */,
 				E0DDAF3921E4BC6700BFEDEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +282,11 @@
 			files = (
 				E0DDAF3621E4BC6700BFEDEF /* ViewController.swift in Sources */,
 				E0DDAF3421E4BC6700BFEDEF /* AppDelegate.swift in Sources */,
+				E0970BB521EF2FDA0092867A /* LayoutViewModel.swift in Sources */,
+				E0970BAE21EF2EEA0092867A /* TestCell.swift in Sources */,
+				E0970BB121EF2F410092867A /* ArrayExtension.swift in Sources */,
+				E0970BB321EF2F5F0092867A /* UIKitExtension.swift in Sources */,
+				E0970BA821EF2E640092867A /* LayoutTestViewController.swift in Sources */,
 				E0DDAF4921E4C14F00BFEDEF /* CommonCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
